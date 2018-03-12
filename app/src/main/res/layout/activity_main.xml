@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/darker_gray">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/linear_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:padding="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@android:color/white"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/card_avatar"
+                android:layout_width="@dimen/card_avatar"
+                android:layout_height="@dimen/card_avatar"
+                android:background="@drawable/avatar"
+                android:scaleType="centerInside" />
+
+            <TextView
+                android:id="@+id/card_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="4dp"
+                android:text="@string/ashith_vl"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/card_name_text" />
+
+            <TextView
+                android:id="@+id/card_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="4dp"
+                android:text="@string/ashithvl_gmail_com"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/card_name_text" />
+
+            <TextView
+                android:id="@+id/card_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="4dp"
+                android:text="@string/_91_8870997280"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/card_name_text" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/convertedImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linear_layout"
+            android:padding="4dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/converted_image_appears_below"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/card_name_text" />
+
+        <ImageView
+            android:id="@+id/savedImage"
+            android:layout_below="@id/convertedImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="16dp"
+            android:scaleType="centerInside" />
+
+        <Button
+            android:id="@+id/convertToPng"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/savedImage"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="16dp"
+            android:padding="16dp"
+            android:text="@string/convert_to_png_and_save_to_sd_card" />
+
+    </RelativeLayout>
+</ScrollView>
